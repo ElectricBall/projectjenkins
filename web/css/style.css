@@ -1,0 +1,435 @@
+@font-face
+{
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter\ -\ Zero\ Zero.woff"),
+         url("Fonts/Booter\ -\ Zero\ Zero.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*
+{
+    box-sizing: border-box;
+    font-family: serif;
+    color: #777;
+}
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: rgb(235, 198, 152);
+}
+
+.nav ul
+{
+    margin: 0;
+    display: inline;
+    text-align: center;
+}
+
+.nav li
+{
+    display: inline;
+}
+
+.nav a
+{
+    display: inline-flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.main-nav
+{
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    background-color: rgba(250, 188, 112, 0.966);
+    border-bottom: 3px solid white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main-nav li
+{
+    padding: 0 .5%;
+}
+
+.nav a:hover
+{
+    background-color: rgb(253, 205, 146);
+}
+
+.main-header
+{
+    background-color: rgba(250, 188, 112, 0.966);
+    background-size: cover;
+    height: 105px;
+}
+
+.band-name-small
+{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 60px;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+    margin-top: 0;
+}
+
+.band-name-large
+{
+    text-align: center;
+    font-size: 6em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.slider
+{
+    margin-left: 80%;
+    margin-top: -24.9%;
+}
+
+.slider > div
+{
+    position: absolute;
+}
+
+.slider img
+{
+    width: 300px; 
+    height: 378px;
+}
+
+.pict
+{
+    margin-left: 23.5%;
+    margin-top: 23%;
+}
+.pict > div
+{
+    position: absolute;
+}
+.pict img
+{
+    width: 1000px;
+    height: 250px;
+}
+
+.content-section
+{
+    margin: 1em;
+    background-color: antiquewhite
+}
+
+.container
+{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header
+{
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 2.5em;
+    background-color: rgba(250, 188, 112, 0.966);
+    color: white;
+    text-align: center;
+}
+
+.about-band-image
+{
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer
+{
+    background-color: rgba(250, 188, 112, 0.966);
+    background-size: cover;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    clear: both;
+    position: fixed;
+    align-content: center;
+}
+
+.main-footer-container
+{
+    display: inline;
+    align-items: center;
+}
+
+.main-footer-container ul
+{
+    flex-grow: 1;
+    text-align: end;
+    vertical-align: middle;
+}
+
+.footer-nav li
+{
+    padding: 0 .5em;
+    vertical-align: middle;
+}
+
+.footer-nav img
+{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.btn
+{
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .68em;
+    cursor: pointer;
+}
+
+.btn-primary 
+{
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover 
+{
+    background-color: #2D9CDB;
+}
+
+.tour-row 
+{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child 
+{
+    border: none;
+}
+
+.tour-item 
+{
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date 
+{
+    width: 11%;
+    font-weight: bold;
+    color: black;
+}
+
+.tour-city 
+{
+    width: 24%;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tour-arena 
+{
+    width: 42%;
+    color: black;
+    font-size: 20px;
+    text-align: center
+}
+
+.tour-btn 
+{
+    max-width: 19%;
+}
+
+.shop-item 
+{
+    margin: 30px;
+}
+
+.shop-item-title 
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image 
+{
+    height: 250px;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shop-item-details 
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.shop-item-price 
+{
+    flex-grow: 1;
+    color: #56CCF2;
+}
+
+.shop-items 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header 
+{
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column 
+{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row 
+{
+    display: flex;
+}
+
+.cart-item 
+{
+    width: 45%;
+}
+
+.cart-price 
+{
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity
+{
+    width: 35%;
+}
+
+.cart-item-title 
+{
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image 
+{
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger 
+{
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover 
+{
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input 
+{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child 
+{
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column 
+{
+    border: none;
+}
+
+.cart-total 
+{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title 
+{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price 
+{
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase 
+{
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
